@@ -1,4 +1,4 @@
-# SQL Portfolio: Marketing Data Analysis Projects
+# 📊 SQL Portfolio: Marketing Data Analysis Projects
 
 Welcome to my SQL portfolio!  
 This repository contains examples of projects focused on analyzing marketing campaign data from Facebook Ads and Google Ads.  
@@ -6,7 +6,7 @@ Each project demonstrates practical applications of SQL for business analysis, i
 
 ---
 
-## Dataset Description
+## 🗄 Dataset Description
 
 The database includes the following key tables:
 
@@ -21,7 +21,7 @@ Such a structure enables detailed campaign efficiency analysis, KPI calculation,
 
 ---
 
-## Projects
+## 🛠 Projects
 
 ### 1. [facebook_google_ads_data_aggregation.sql](facebook_google_ads_data_aggregation.sql)
 
@@ -29,7 +29,8 @@ Such a structure enables detailed campaign efficiency analysis, KPI calculation,
 To consolidate daily Facebook Ads and Google Ads data into a unified report.  
 Aggregates spend, impressions, clicks, and conversion value by ad date, media source, campaign name, and ad set name.
 
-**Techniques:**  
+**Techniques:**
+
 - Data merging using `LEFT JOIN` and `UNION ALL`.
 - Creation of a unified media source field.
 - Aggregation of advertising metrics grouped by multiple dimensions.
@@ -42,7 +43,8 @@ Aggregates spend, impressions, clicks, and conversion value by ad date, media so
 To identify the marketing campaign with the highest ROMI (Return on Marketing Investment) among campaigns with significant spending.  
 Additionally, to determine the best-performing ad set within the top campaign based on ROMI.
 
-**Techniques:**  
+**Techniques:**
+
 - Conditional aggregation and filtering using `GROUP BY` and `HAVING`.
 - ROMI calculation with basic SQL aggregation.
 - Sorting aggregated results to select top performers.
@@ -55,7 +57,8 @@ Additionally, to determine the best-performing ad set within the top campaign ba
 To extract and decode the `utm_campaign` parameter from advertising URL parameters.  
 To calculate core advertising KPIs such as CTR (Click-Through Rate), CPC (Cost Per Click), CPM (Cost Per Mille), and ROMI.
 
-**Techniques:**  
+**Techniques:**
+
 - Regular expression parsing to extract UTM fields.
 - URL decoding via a custom SQL function.
 - Handling missing or invalid data.
@@ -69,14 +72,15 @@ To calculate core advertising KPIs such as CTR (Click-Through Rate), CPC (Cost P
 To analyze monthly advertising performance trends by campaign.  
 To calculate month-over-month percent changes for key KPIs like CPM, CTR, and ROMI.
 
-**Techniques:**  
+**Techniques:**
+
 - Month-based aggregation using `DATE_TRUNC`.
 - Use of window functions (`LAG`) to calculate period-over-period dynamics.
 - Percent change computation to monitor campaign trends over time.
 
 ---
 
-## Final Note
+## ✍🏻 Final Note
 
 These projects aim to reflect practical approaches to marketing campaign analysis using SQL.  
 They showcase techniques for consolidating multi-source data, calculating business-critical KPIs, and evaluating advertising efficiency across time.
